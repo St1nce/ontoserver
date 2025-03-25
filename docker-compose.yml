@@ -1,0 +1,49 @@
+version: "3"
+
+services:  
+  demo-db:    
+    image: mysql:latest
+    container_name: demo-db
+    cap_add:
+      - SYS_NICE
+    restart: always
+    # Input data about database
+    environment:
+      - MYSQL_DATABASE=demo_db
+      - MYSQL_USER=sasha
+      - MYSQL_PASSWORD=12345
+      - MYSQL_ROOT_PASSWORD=12345
+    ports:
+      - 8080:3306
+    networks:
+      - app-network
+    volumes:
+      - db-vol:/var/lib/mysql
+      - ./demo-db/init.sql:/docker-entrypoint-initdb.d/init.sql
+  back:
+    depends_on:
+       - demo-db
+    restart: always
+    build: ./demo
+    container_name: back
+    ports:
+      - 8081:8080
+    networks:
+      - app-network 
+    volumes:
+      - ./demo-ontology:/demo-ontology
+  front:
+    restart: always
+    build: ./demo-front
+    container_name: front
+    networks:
+      - app-network
+    ports:
+      - 8082:3000
+volumes:
+  db-vol:
+    driver: local
+  
+networks:
+  app-network:
+    driver: bridge
