@@ -1,0 +1,59 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.2'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '21'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// зависимости для безопасности
+	implementation "org.springframework.boot:spring-boot-starter-security"
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.3'
+	implementation 'io.jsonwebtoken:jjwt-impl:0.12.3'
+	implementation 'io.jsonwebtoken:jjwt-jackson:0.12.3'
+	implementation 'com.auth0:java-jwt:4.4.0'
+	implementation 'org.springframework.security:spring-security-crypto:6.2.1'
+
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// зависимости для онтологий
+	implementation 'net.sourceforge.owlapi:owlapi-api:5.5.0'
+	implementation 'net.sourceforge.owlapi:owlapi-apibinding:5.5.0'
+	implementation 'net.sourceforge.owlapi:org.semanticweb.hermit:1.4.3.517'
+	implementation 'net.sourceforge.owlapi:owlexplanation:5.0.0'
+	implementation 'net.sourceforge.owlapi:owlapi-distribution:5.5.0'
+
+
+	// зависимости для базы даннх
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'mysql:mysql-connector-java:8.0.33'
+
+	// зависимости для отправки писем
+	implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+	implementation 'org.springframework.boot:spring-boot-starter-mail:3.1.5'
+
+	// зависимости для автотестов
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// зависимости для аннотаций
+	compileOnly 'org.projectlombok:lombok:1.18.32'
+	annotationProcessor 'org.projectlombok:lombok:1.18.32'
+	testCompileOnly 'org.projectlombok:lombok:1.18.32'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
+	implementation 'org.apache.commons:commons-lang3:3.6'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
