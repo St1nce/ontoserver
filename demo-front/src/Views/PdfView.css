@@ -1,0 +1,19 @@
+.pdf-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pdf-div > .pdf-page-changer {
+  width: 300px;
+  position: sticky;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.pdf-div > .pdf-page-changer > button:disabled {
+  visibility: hidden;
+}

@@ -1,0 +1,60 @@
+form > div {
+  padding: 10px;
+  margin: 0px 10px;
+  overflow-x: hidden;
+}
+
+form > h1 > button {
+  position: relative;
+  left: 40px;
+}
+
+form > div > label {
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+}
+
+form > div > label > input {
+  flex: 1 1 auto;
+  height: 40px;
+}
+
+form > div > .divValue {
+  padding-left: 10px;
+}
+
+form > div > .divValue > * {
+  margin: 10px 0px;
+}
+
+form > div > .divValue p {
+  line-height: 1.5em;
+}
+
+form > div > .divValue > p {
+  margin: 10px 0px;
+}
+
+form > .div-submit-button {
+  background-color: white;
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columns-div {
+  display: flex;
+  width: 100%;
+}
+
+.column-div {
+  flex: 1 1 auto;
+  margin: 0px auto;
+}

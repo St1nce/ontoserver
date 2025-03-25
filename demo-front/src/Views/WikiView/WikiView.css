@@ -1,0 +1,17 @@
+.wiki {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.wiki > * {
+  padding: 10px 20px;
+}
+
+.wiki-content {
+  flex: 1 0 70%;
+}

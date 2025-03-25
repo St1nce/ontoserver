@@ -1,0 +1,29 @@
+.aside-element {
+  color: #00467f;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.aside-element p:hover {
+  color: #f20f38;
+}
+
+a.active {
+  color: #f20f38;
+}
+
+a {
+  text-underline-offset: 5px;
+  color: inherit;
+}
+
+.aside-element img {
+  width: 15px;
+  margin: 0px 2px;
+}
+
+.aside-element p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+  }

@@ -1,0 +1,72 @@
+.header {
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  border-bottom: 8px solid #f3f3f3;
+  padding: 20px 0px 20px 0px;
+  flex: 0 1 auto;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-content {
+  flex: 1 1 auto;
+  padding: 0px 35px 0px 20px;
+}
+
+.header .logo {
+  flex: 0 0 20%;
+  min-width: 300px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header .logo p {
+  margin: auto;
+  font: 16pt small-caps;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  background: linear-gradient(
+    to left,
+    #76223D,
+    #F31037,
+    #1CC273,
+    #015C4B
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header-navbar {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-top {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-top {
+  justify-content: flex-end;
+  padding-bottom: 25px;
+}
+
+.header-top * {
+  margin: 10px;
+}
+
+.header-navbar {
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.header-navbar > div {
+  display: flex;
+  flex-direction: row;
+}

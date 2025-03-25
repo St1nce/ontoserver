@@ -1,0 +1,7 @@
+.registration-modal .modal-fill{
+    flex-basis: 500px;
+}
+
+.registration-modal label{
+    min-width: 120px !important;
+}

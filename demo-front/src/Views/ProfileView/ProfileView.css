@@ -1,0 +1,11 @@
+.profile {
+    width: 700px;
+}
+
+.profile label {
+    min-width: 0px !important;
+}
+
+.profile .pwd-div label{
+    min-width: 205px !important;
+}

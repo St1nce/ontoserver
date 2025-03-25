@@ -1,0 +1,52 @@
+.banner {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  box-sizing: border-box;
+}
+
+.banner .freepick {
+  font-size: 12pt;
+  right: 45px;
+  bottom: 30px;
+  position: absolute;
+  margin: auto;
+}
+
+.banner .about {  
+  overflow: hidden;
+  height: 90%;
+  width: 45%;
+  display: flex;
+  margin-right: 6%;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+.banner .about p {
+  letter-spacing: 0.2rem;
+  line-height: 3rem;  
+  font-size: 16pt;
+  text-align: center;
+  margin: auto;
+  text-overflow: ellipsis;
+}
+
+.banner .about p b {
+  font-weight: 900;
+  font-size: 20pt;
+  opacity: 90%;
+}
+
+.banner .freepick a {
+  text-decoration: none;
+  color: blue;
+}

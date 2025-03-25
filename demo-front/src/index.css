@@ -1,0 +1,37 @@
+html,
+body,
+#root {
+  height: 100%;
+  max-width: 100vw;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  text-align: center;
+  font-size: 20pt;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18pt;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+p {
+  white-space: "break-spaces";
+}
