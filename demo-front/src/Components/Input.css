@@ -1,0 +1,45 @@
+.inputLine {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px 0px;
+  min-height: 40px;
+  align-items: center;
+}
+
+.inputLine > label {
+  min-width: 200px;
+}
+
+.inputLine > input,
+.inputLine > textarea,
+.inputLine > select {
+  padding: 7px;
+}
+
+
+.inputLine > textarea {
+  flex: 1 1 auto;
+  margin: 0px;
+}
+
+.inputLine > textarea {
+  resize: vertical;
+}
+
+.inputLine button {
+  flex: 0 0;
+  min-width: 40px;
+  align-self: center;
+}
+
+.inputLine > input,
+.inputLine > select,
+.inputLine > p {
+  margin: 0px;
+  flex: 1 1 auto;
+}
+
+.inputLine > p {
+  align-self: center;
+}

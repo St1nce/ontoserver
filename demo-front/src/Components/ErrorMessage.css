@@ -1,0 +1,10 @@
+.err-msg {
+  text-align: center;
+  color: #f1607a;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.offscreen {
+  display: none;
+}
